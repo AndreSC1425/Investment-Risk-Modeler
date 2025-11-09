@@ -14,8 +14,7 @@ This is an application designed to analyze the financial risk of a user-defined 
 
 ## Technology Stack
 
-| Layer | Technology | Key Libraries/Frameworks | Role |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | **Frontend (UI)** | **Angular** | User input and data visualization (Histogram). |
 | **Backend (API)** | **Spring Boot (Java)** | REST Controllers |
 | **Python** | Pandas, NumPy, SciPy, `yfinance` | Executes the Monte Carlo Simulation and financial modeling. |
