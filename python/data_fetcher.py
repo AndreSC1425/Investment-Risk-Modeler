@@ -1,3 +1,4 @@
+import sys
 import yfinance as yf
 import pandas as pd
 import numpy as np
@@ -12,15 +13,18 @@ def fetch_and_process_data(tickers):
         if data.empty:
             raise ValueError("No data returned from yfinance. Check ticker symbols.")
 
-        log_returns = np.log(data / data.shift(1))
-
+        if len(tickers) == 1:
+            close_prices = data.to_frame(name=tickers[0])
+        else:
+            close_prices = data
+        
+        log_returns = np.log(close_prices / close_prices.shift(1))
         log_returns = log_returns.dropna()
         
-        # print("Data processing complete.")
         return log_returns
 
     except Exception as e:
-        print(f"An error occurred during data fetching: {e}")
+        print(f"FATAL DATA FETCHER ERROR: {e}", file=sys.stderr)
         return pd.DataFrame()
 
 if __name__ == '__main__':
