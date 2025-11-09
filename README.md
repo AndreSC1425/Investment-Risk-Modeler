@@ -14,6 +14,7 @@ This is an application designed to analyze the financial risk of a user-defined 
 
 ## Technology Stack
 
+| &nbsp; | &nbsp; | &nbsp; |
 | :--- | :--- | :--- |
 | **Frontend (UI)** | **Angular** | User input and data visualization (Histogram). |
 | **Backend (API)** | **Spring Boot (Java)** | REST Controllers |
