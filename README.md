@@ -14,7 +14,7 @@ This is an application designed to analyze the financial risk of a user-defined 
 
 ## Application Dashboard
 
-![Monte Carlo Simulation Results Dashboard](images/results_dashboard.png)
+![Monte Carlo Simulation Results Dashboard](results_dashboard.png)
 
 ## Technology Stack
 
