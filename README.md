@@ -61,7 +61,7 @@ To run this application, you need **Java, Maven, Node.js (with Angular CLI),** a
 
 ---
 
-## 💡 How to Use the Application
+## How to Use the Application
 
 1.  Enter stock tickers.
 2.  Adjust the percentages to ensure **Total Weight** is **100%**.
